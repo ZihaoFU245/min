@@ -57,7 +57,7 @@
     "prebuild-install": "^7.0.1",
     "prettier": "^2.2.1",
     "snazzy": "^9.0.0",
-    "standard": "^14.3.4"
+    "standard": "^17.1.2"
   },
   "license": "Apache-2.0",
   "scripts": {

@@ -76,6 +76,11 @@ var searchEngines = {
     suggestionsURL: 'https://search.brave.com/api/suggest?q=%s',
     queryParam: 'q'
   },
+  SearXNG: {
+    name: 'SearXNG',
+    searchURL: 'https://search.snowy-richter.ts.net/?q=%s',
+    queryParam: 'q'
+  },
   none: {
     name: 'none',
     searchURL: 'http://%s'
