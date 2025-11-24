@@ -8,37 +8,37 @@ Min is a privacy-focused web browser built on **Electron** and **Chromium**. It 
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                        Main Process                          │
+│                        Main Process                         │
 │  (main/*.js - Node.js environment)                          │
-│                                                               │
-│  • Application lifecycle management                          │
-│  • Window management                                         │
-│  • Menu system                                               │
-│  • View (WebContentsView) management                         │
-│  • Content filtering                                         │
-│  • Download handling                                         │
-│  • Permission management                                     │
-│  • Protocol handlers                                         │
+│                                                             │
+│  • Application lifecycle management                         │
+│  • Window management                                        │
+│  • Menu system                                              │
+│  • View (WebContentsView) management                        │
+│  • Content filtering                                        │
+│  • Download handling                                        │
+│  • Permission management                                    │
+│  • Protocol handlers                                        │
 └─────────────────────────────────────────────────────────────┘
                             ↕ IPC
 ┌─────────────────────────────────────────────────────────────┐
-│                      Renderer Process                        │
+│                      Renderer Process                       │
 │  (js/*.js - Browser UI environment)                         │
-│                                                               │
+│                                                             │
 │  ┌───────────────────────────────────────────────────────┐  │
 │  │              Browser UI (index.html)                  │  │
-│  │                                                         │  │
-│  │  • Tab Bar                                             │  │
-│  │  • Searchbar                                           │  │
-│  │  • Task Overlay                                        │  │
-│  │  • Settings                                            │  │
+│  │                                                       │  │
+│  │  • Tab Bar                                            │  │
+│  │  • Searchbar                                          │  │
+│  │  • Task Overlay                                       │  │
+│  │  • Settings                                           │  │
 │  └───────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
                             ↕
 ┌─────────────────────────────────────────────────────────────┐
-│                    Web Content Views                         │
+│                    Web Content Views                        │
 │  (WebContentsView instances - isolated contexts)            │
-│                                                               │
+│                                                             │
 │  • Each tab runs in its own WebContentsView                 │
 │  • Sandboxed with context isolation                         │
 │  • Preload scripts for controlled access                    │
